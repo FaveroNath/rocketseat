@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Exercício 01</title>
-</head>
-<body>
-
-</body>
-</html>
+<script type="text/javascript">
+	function retornaEnderco(rua, num, bairro, cidade, uf){
+		return ("O usuário mora em "+cidade+ " / "+ uf+ ", no bairro "+ bairro+ ", na rua " + "\" " + rua + "\" "+  "com  nº "+ num); 
+	}
+	var endereco = {
+		rua: "Rua dos pinheiros",
+		numero: 1293,
+		bairro: "Centro",
+		cidade: "São Paulo",
+		uf: "SP"
+	};
+	var exibe = retornaEnderco(endereco.rua, endereco.numero, endereco.bairro, endereco.cidade, endereco.uf);
+	console.log(exibe);
+</script>
