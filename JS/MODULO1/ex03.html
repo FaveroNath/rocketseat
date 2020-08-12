@@ -1,2 +1,9 @@
 <script type="text/javascript">
+	function temHabilidade(skills){
+		var pos = skills.indexOf("javascript");
+		if(pos != -1) return true;
+		else return false;
+	}
+	var skills = ["javascript","ReactJS","React Native"];
+	console.log(temHabilidade(skills));
 </script>
