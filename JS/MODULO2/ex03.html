@@ -1,2 +1,17 @@
-<script>
-</script>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Exercício 3</title>
+</head>
+<body>
+	<ul id = "lista"></ul>
+	<script>
+		let nomes = ["Diego","Gabriel","Lucas"];		
+		for(var i = 0; i < 3; i++){
+			const item = document.createElement('li');
+			item.innerHTML = nomes[i];
+			lista.appendChild(item);
+		}
+	</script>
+</body>
+</html>
