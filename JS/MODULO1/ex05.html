@@ -1,2 +1,21 @@
 <script type="text/javascript">
+
+	function retornaInfo(){
+		for(let usuario of usuarios){
+			const nome = usuario.nome;
+			const habilidade = usuario.habilidades.join(", ");
+			console.log(`O ${nome} possui as habildades: ${habilidade}`);
+		}
+	}
+	var usuarios = [
+	{
+		nome: "Diego",
+		habilidades: ["Javascript","ReactJS","Redux"]
+	},
+	{
+		nome: "Gabriel",
+		habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+	}
+	];
+	retornaInfo();
 </script>
