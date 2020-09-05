@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Exercício 01</title>
+	<title>Exercício 02</title>
 </head>
 <body>
 
@@ -10,6 +10,15 @@
 	</div>
 	<script type="text/javascript">
 		let btnElement = document.querySelector('.btn');
+		function getRandomColor() {
+ 			var letters = "0123456789ABCDEF";
+ 			var color = "#";
+ 			for (var i = 0; i < 6; i++) {
+ 				color += letters[Math.floor(Math.random() * 16)];
+ 			}
+ 			return color;
+		}
+
 		btnElement.onclick = () => {
 			let boxElement = document.createElement('div');
 			
@@ -21,6 +30,14 @@
 			boxElement.classList.add("box");
 
 			document.body.appendChild(boxElement); 
+			boxElement.onmouseover = () => {
+				var letters = "0123456789ABCDEF";
+ 				var color = "#";
+ 				for (var i = 0; i < 6; i++) {
+ 					color += letters[Math.floor(Math.random() * 16)];
+ 				}
+ 				boxElement.style.backgroundColor = color;	
+			}
 		}
 	</script>
 </body>
