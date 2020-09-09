@@ -1,0 +1,8 @@
+{
+  "name": "rocketseat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FaveroNath/rocketseat.git",
+  "author": "FaveroNath <faveronathalia@gmail.com>",
+  "license": "MIT"
+}
