@@ -1,5 +1,5 @@
 //Mod 1
-//Exercio 5
+//Exercio 6
 
 const usuario = 'Diego';
 const idade = 23;
